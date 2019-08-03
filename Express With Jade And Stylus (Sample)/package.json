@@ -1,0 +1,27 @@
+{
+  "name": "expresswithjadeandstylus",
+  "version": "1.0.0",
+  "description": "\"A sample for jade and stylus with express framework",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^3.21.2",
+    "jade": "*",
+    "nib": "*",
+    "pug": "*",
+    "stylus": "x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/deepak154\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[:\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C/Node.JS.git"
+  },
+  "keywords": [
+    "Jade",
+    "Stylus",
+    "Express"
+  ],
+  "author": "Deepak",
+  "license": "ISC"
+}
