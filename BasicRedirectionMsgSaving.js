@@ -13,14 +13,18 @@ http.createServer((req, res)=>{
 			body.push(chunk);
 			console.log(chunk);
 		});
-		req.on('end',()=>{
+		//return statement ensure to return this code before moving to next lines of code
+		return req.on('end',()=>{
 			const parsedBody = Buffer.concat(body).toString();
 			console.log(parsedBody);
 			const msg = parsedBody.split("=")[1];
-			fs.writeFileSync("message.txt",msg);
-		res.statusCode = 302;
-		res.setHeader('location', '/');
-		return res.end();
+			//asynchronous calling of write file
+			fs.writeFile("message.txt",msg, err=>{
+				res.statusCode = 302;
+				res.setHeader('location', '/');
+				return res.end();
+			});
+		
 		});
 	
 	}
