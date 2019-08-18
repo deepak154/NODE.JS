@@ -1,0 +1,18 @@
+{
+  "name": "parsingrequestexpress",
+  "version": "1.0.0",
+  "description": "Parsing Request using Express",
+  "main": "ParsingIncomingRequest.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "nodemon ParsingIncomingRequest.js"
+  },
+  "author": "Deepak",
+  "license": "ISC"
+}
